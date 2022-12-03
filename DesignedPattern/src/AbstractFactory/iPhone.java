@@ -6,20 +6,14 @@ public abstract class iPhone extends Telephone{
 
     private String couleur;
 
-    public iPhone(String modele, String systeme) {
-        this.modele = modele;
-        this.systeme = systeme;
-    }
+    @Override
+    public abstract String getModele();
 
     @Override
-    public String getModele() {
-        return modele;
-    }
+    public abstract String getSysteme();
 
     @Override
-    public String getSysteme() {
-        return systeme;
-    }
+    public abstract String getCouleur();
 
 
 }

@@ -4,18 +4,12 @@ public abstract class Samsung extends Telephone {
     private String modele;
     private String systeme;
 
-    public Samsung(String modele, String systeme) {
-        this.modele = modele;
-        this.systeme = systeme;
-    }
+    private String couleur;
+    @Override
+    public abstract String getModele();
 
     @Override
-    public String getModele() {
-        return modele;
-    }
+    public abstract String getSysteme();
 
-    @Override
-    public String getSysteme() {
-        return systeme;
-    }
+    public abstract String getCouleur();
 }
