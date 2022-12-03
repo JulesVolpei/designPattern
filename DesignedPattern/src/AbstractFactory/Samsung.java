@@ -1,6 +1,6 @@
 package AbstractFactory;
 
-public class Samsung extends Telephone {
+public abstract class Samsung extends Telephone {
     private String modele;
     private String systeme;
 

@@ -10,7 +10,12 @@ public class SamsungFactory implements TelephoneAbstractFactory {
     }
 
     @Override
-    public Telephone createTelephone() {
-        return new Samsung(modele, systeme);
+    public Telephone createTelephoneRouge() {
+        return new SamsungRouge(modele, systeme);
+    }
+
+    @Override
+    public Telephone createTelephoneNoir() {
+        return new SamsungNoir(modele, systeme);
     }
 }

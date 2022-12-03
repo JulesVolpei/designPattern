@@ -1,8 +1,10 @@
 package AbstractFactory;
 
-public class iPhone extends Telephone{
+public abstract class iPhone extends Telephone{
     private String modele;
     private String systeme;
+
+    private String couleur;
 
     public iPhone(String modele, String systeme) {
         this.modele = modele;
@@ -18,4 +20,6 @@ public class iPhone extends Telephone{
     public String getSysteme() {
         return systeme;
     }
+
+
 }

@@ -10,8 +10,13 @@ public class iPhoneFactory implements TelephoneAbstractFactory{
     }
 
     @Override
-    public Telephone createTelephone() {
+    public Telephone createTelephoneRouge() {
         // Instancie un nouvel AbstractFactory.iPhone
-        return new iPhone(modele, systeme);
+        return new iPhoneRouge(modele, systeme);
+    }
+
+    @Override
+    public Telephone createTelephoneNoir() {
+        return new iPhoneNoir(modele, systeme);
     }
 }
